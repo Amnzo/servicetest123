@@ -9,9 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
-import { environment } from '../environments/environment';
+
 import {
   MatButtonModule,
   MatMenuModule,
@@ -40,8 +38,6 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule,
     ReactiveFormsModule,
     HttpClientModule,
     RouterModule.forRoot(routes),
